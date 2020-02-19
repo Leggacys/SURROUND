@@ -32,33 +32,35 @@ public class SpawnerWave : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(curentweavesIndex);
-        if (curentweavesIndex < wave.Length)
+        if (player != null)
         {
-            if (finishingWeave == true)
+            if (curentweavesIndex < wave.Length)
+            {
+                if (finishingWeave == true)
+                {
+                    finishingWeave = !finishingWeave;
+                    StartCoroutine(StartNextWave(curentweavesIndex));
+                    curentweavesIndex++;
+                }
+
+            }
+            else
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && curentweavesIndex >= wave.Length)
+            {
+                if (!ok)
+                {
+                    Instantiate(Boss, bossSpawnerPonint.position, bossSpawnerPonint.rotation);
+                    healtBar.SetActive(true);
+                    ok = !ok;
+                }
+            }
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && i == curentweave.count)
             {
                 finishingWeave = !finishingWeave;
-                StartCoroutine(StartNextWave(curentweavesIndex));
-                curentweavesIndex++;
+                i = 0;
             }
-                
+
         }
-        else
-        if(GameObject.FindGameObjectsWithTag("Enemy").Length == 0&&curentweavesIndex>=wave.Length)
-        {
-            if (!ok)
-            {
-                Instantiate(Boss, bossSpawnerPonint.position, bossSpawnerPonint.rotation);
-                healtBar.SetActive(true);
-                ok = !ok;
-            }
-        }
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && i == curentweave.count)
-        {
-            finishingWeave = !finishingWeave;
-            i = 0;
-        }
-        
     }
 
     IEnumerator StartNextWave(int index)

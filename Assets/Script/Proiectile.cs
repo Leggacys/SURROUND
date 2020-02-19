@@ -44,6 +44,12 @@ public class Proiectile : MonoBehaviour
             collision.GetComponent<Boss>().TakeDamage(damage);
 
         }
+        else
+            if(collision.tag=="Boss2")
+        {
+            Distructions();
+            collision.GetComponent<Boss2>().TakeDamage(damage);
+        }
     }
     
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3861054358591901113}
   - component: {fileID: 3861054358591901114}
   - component: {fileID: 3131244281055622008}
+  - component: {fileID: 6689937783306532162}
   m_Layer: 0
   m_Name: Arme_3
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3861054358591901115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.15, y: 3.64, z: 0}
+  m_LocalPosition: {x: -4.15, y: 3.64, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -69,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 5516976442245698120, guid: be249ed1a855cfb42a1640951d619ced,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -94,8 +95,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d848cd7defd24594bad2fad3dec926f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  lifetime: 2
-  explosions: {fileID: 5520504522476681235, guid: 3a009b654b1cba041ad97e0604d9e82e,
+  speed: 6
+  lifetime: 3
+  explosions: {fileID: 2921878710220524075, guid: 7c7ad7b7ce1830e4189380a6184f51c8,
     type: 3}
-  damage: 3
+  damage: 1
+--- !u!61 &6689937783306532162
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3861054358591901115}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.71666664, y: 0.66333336}
+    newSize: {x: 0.71666664, y: 0.66333336}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.71666664, y: 0.66333336}
+  m_EdgeRadius: 0

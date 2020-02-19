@@ -71,7 +71,7 @@ public class Move : MonoBehaviour
         panelAnim.SetTrigger("Screen");
         if (health <= 0)
         {
-            transitions.loadScreen("LOSE");
+            transitions.LoadSreen(4);
             Destroy(gameObject);
         }
     }

@@ -45,7 +45,7 @@ public class Range : Inmic
         Vector3 thescale = transform.localScale;    
         if(player!=null)
         {
-            if(player.transform.position.x>transform.position.x&&!Facingright|| player.transform.position.x < transform.position.x&&Facingright)
+            if(player.transform.position.x > transform.position.x && Facingright==false|| player.transform.position.x < transform.position.x && Facingright==true)
             {
                 Facingright =! Facingright;
                 thescale.x *= -1;

@@ -11,12 +11,17 @@ public class transitionsPanel : MonoBehaviour
         transferPanel = GetComponent<Animator>();
     }
 
-    public void loadScreen(string sceneName)
+    public void LoadSreen(int index)
     {
-        StartCoroutine(Transitions(sceneName));
+        StartCoroutine(Transitions(index));
     }
 
-    IEnumerator Transitions(string sceneName)
+    public void loadScreen()
+    {
+        StartCoroutine(Transitions(SceneManager.GetActiveScene().buildIndex+1));
+    }
+
+    IEnumerator Transitions(int sceneName)
     {
         transferPanel.SetTrigger("end");
         yield return new WaitForSeconds(1);

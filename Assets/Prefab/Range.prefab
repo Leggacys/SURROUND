@@ -109,8 +109,8 @@ Transform:
   m_LocalPosition: {x: -0.030430794, y: 0.5994148, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2381640400471825551}
   - {fileID: 2381640399343868429}
+  - {fileID: 2381640400471825551}
   m_Father: {fileID: 2381640400902967620}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -193,7 +193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2381640399179210346}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2381640399343868428
 SpriteRenderer:
@@ -390,7 +390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2381640399179210346}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2381640400471825550
 SpriteRenderer:
@@ -742,7 +742,7 @@ MonoBehaviour:
   damage: 1
   pickups:
   - {fileID: 8802312202597217015, guid: 533eaa2864a871f4b92892cf3b82f02e, type: 3}
-  distance: 15
+  distance: 10
   shotpoint: {fileID: 2381640399645864691}
   proiectiles: {fileID: 6777317157779032142, guid: fe547960c7e431445b572f723f8a46de,
     type: 3}

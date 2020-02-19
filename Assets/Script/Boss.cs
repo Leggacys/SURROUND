@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class Boss : MonoBehaviour
         healtBar.value = health;
         if (health <= 0)
         {
-            transitions.loadScreen("Win");
+            transitions.loadScreen();
             Destroy(gameObject);
             healtBar.gameObject.SetActive(false);
             
