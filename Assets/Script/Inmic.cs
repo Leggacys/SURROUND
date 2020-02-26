@@ -24,7 +24,7 @@ public class Inmic : MonoBehaviour
         if (health <= 0)
         {
             int randomNumber = Random.Range(0, 101);
-            if(randomNumber>20)
+            if(randomNumber>10)
             {
                 GameObject randomPickup = pickups[Random.Range(0, pickups.Length)];
                 Instantiate(randomPickup, transform.position, transform.rotation);
@@ -34,5 +34,5 @@ public class Inmic : MonoBehaviour
         }
     }
 
-   
+
 }

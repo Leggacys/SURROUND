@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - Boss2
   - BossMovePoint
+  - worldLight
+  - Gripa
   layers:
   - Default
   - TransparentFX

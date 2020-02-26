@@ -8,7 +8,7 @@ public class SpawnerWave : MonoBehaviour
     [System.Serializable]
     public class WAVE
     {
-        public Inmic[] enemies;
+        public GameObject[] enemies;
         public int count;
         public float enemybetwenspown;
     }
@@ -78,7 +78,7 @@ public class SpawnerWave : MonoBehaviour
             {
                 yield break;
             }
-            Inmic randomEnemy = curentweave.enemies[Random.Range(0, curentweave.enemies.Length)];
+            GameObject randomEnemy = curentweave.enemies[Random.Range(0, curentweave.enemies.Length)];
             Transform random = spawnpoint[Random.Range(0, spawnpoint.Length)];
             Instantiate(randomEnemy, random.position, random.rotation);
 

@@ -20,6 +20,7 @@ public class Shadow : Inmic
     // Update is called once per frame
     void Update()
     {
+       
         if(player!=null)
         {
             scale();
@@ -49,6 +50,7 @@ public class Shadow : Inmic
         }
         
     }
+
 
     public void RangeAtack()
     {

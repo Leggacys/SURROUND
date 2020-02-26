@@ -50,11 +50,12 @@ public class Proiectile : MonoBehaviour
             Distructions();
             collision.GetComponent<Boss2>().TakeDamage(damage);
         }
+         else
+            if(collision.tag=="Gripa")
+        {
+            Distructions();
+            collision.GetComponent<Gripa>().takeDamage(damage);
+        }
     }
-    
-
-
-
-
-
+   
 }

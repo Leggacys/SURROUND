@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenee/LVL2.unity
     guid: 93a7d360188bf37418dee9638b0612c8
   - enabled: 1
+    path: Assets/Scenee/Lvl3.unity
+    guid: cd688e86a57e78b40a3e3eac37105958
+  - enabled: 1
     path: Assets/Scenee/Win.unity
     guid: c73e68616c0f5674999b1b11cc45824b
   - enabled: 1
