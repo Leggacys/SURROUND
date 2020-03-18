@@ -47,6 +47,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -100,6 +101,7 @@ MonoBehaviour:
   explosions: {fileID: 2921878710220524075, guid: 7c7ad7b7ce1830e4189380a6184f51c8,
     type: 3}
   damage: 1
+  sound: {fileID: 574720978122591501, guid: d8d7bcf04de0b924c88c6a84e979aa98, type: 3}
 --- !u!61 &6689937783306532162
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,7 +14,9 @@ public class Move : MonoBehaviour
     public float speed;
     public VirtualJoystick Joystick;
     public int  health;
+    public GameObject sound;
     private transitionsPanel transitions;
+    public GameObject menu;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class Move : MonoBehaviour
         anim = GetComponent<Animator>();
         ry = GetComponent<Rigidbody2D>();
         transitions = FindObjectOfType<transitionsPanel>();
+        
     }
 
     // Update is called once per frame
@@ -71,7 +74,9 @@ public class Move : MonoBehaviour
         panelAnim.SetTrigger("Screen");
         if (health <= 0)
         {
-            transitions.LoadSreen(5);
+            
+            Instantiate(sound, transform.position, transform.rotation);
+            menu.SetActive(true);
             Destroy(gameObject);
         }
     }

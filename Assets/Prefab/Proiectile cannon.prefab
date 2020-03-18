@@ -47,6 +47,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -126,3 +127,4 @@ MonoBehaviour:
   explosions: {fileID: 3290241360256015894, guid: 8b2b7be62d0492c4fbff0b137d053ed4,
     type: 3}
   damage: 3
+  sound: {fileID: 5115453015134432036, guid: 83827f1fe47e1ef429540680b4fcd248, type: 3}

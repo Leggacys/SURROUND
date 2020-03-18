@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -325,6 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633689850}
   - component: {fileID: 633689849}
+  - component: {fileID: 633689851}
   m_Layer: 0
   m_Name: Backround
   m_TagString: Untagged
@@ -346,6 +348,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -395,6 +398,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &633689851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633689848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b410874ba0f9b4aa1848921a388b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639378348
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 190, y: 303.57}
+  m_AnchoredPosition: {x: 190, y: 303.5}
   m_SizeDelta: {x: 391.5, y: 384.4}
   m_Pivot: {x: 0.55803835, y: 0.6691485}
 --- !u!114 &639378350
@@ -604,14 +619,14 @@ RectTransform:
   m_GameObject: {fileID: 1190801653}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000238, y: 1.0000238, z: 1.0000238}
+  m_LocalScale: {x: 1.1500274, y: 1.0000238, z: 1.0000238}
   m_Children: []
   m_Father: {fileID: 1475104174}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -48.6, y: 47}
+  m_AnchoredPosition: {x: -67, y: 11}
   m_SizeDelta: {x: 457.5, y: 224.9}
   m_Pivot: {x: 0.9519648, y: 0.14201988}
 --- !u!114 &1190801655
@@ -686,8 +701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5868297141572851615, guid: fabd0d1f70af9734686b1b30cdee7688,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a275f4e4b0eb1345ac4826af473dfeb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -851,16 +865,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534505520}
-  m_LocalRotation: {x: -0, y: -0, z: -0.05538437, w: 0.9984652}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0032338824, w: 0.9999948}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2626, y: 1.191133, z: 1}
   m_Children: []
   m_Father: {fileID: 1475104174}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.3500004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.37100002}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -269, y: 137}
+  m_AnchoredPosition: {x: -285, y: 146}
   m_SizeDelta: {x: 398, y: 198.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1534505522
@@ -881,8 +895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1471549389199821467, guid: fabd0d1f70af9734686b1b30cdee7688,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41ff650feb86d324282bdc68f71eb072, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -942,7 +955,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1534505522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633689851}
+        m_MethodName: Exist_Aplications
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2063194265
 GameObject:
   m_ObjectHideFlags: 0

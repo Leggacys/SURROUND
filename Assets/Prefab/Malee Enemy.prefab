@@ -45,6 +45,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -129,6 +130,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -224,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e2528d9e1354149b1baa0f565f5a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blood: {fileID: 6697815452196926128, guid: 38c28ed49f62068438f69b2f1fcbbd14, type: 3}
   player: {fileID: 0}
   speed: 2
   health: 1
@@ -231,6 +234,7 @@ MonoBehaviour:
   damage: 1
   pickups:
   - {fileID: 8802312202597217015, guid: 533eaa2864a871f4b92892cf3b82f02e, type: 3}
+  sound: {fileID: 4883786898264719048, guid: f29e42addf638654a8f0b29e7713d193, type: 3}
   Distance: 1
   atackspeed: 1
 --- !u!95 &5617620876256888475
@@ -344,6 +348,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

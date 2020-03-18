@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inmic : MonoBehaviour
 {
     private Animator cameraAnim;
+    public  GameObject blood;
     [HideInInspector]
     public Transform player;
     public float speed;
@@ -12,6 +13,7 @@ public class Inmic : MonoBehaviour
     public float timebetwenatack;
     public int damage;
     public GameObject[] pickups;
+    public GameObject sound;
     public  virtual void Start()
     {
         cameraAnim = Camera.main.GetComponent<Animator>();
@@ -28,7 +30,9 @@ public class Inmic : MonoBehaviour
             {
                 GameObject randomPickup = pickups[Random.Range(0, pickups.Length)];
                 Instantiate(randomPickup, transform.position, transform.rotation);
+                Instantiate(blood, transform.position, transform.rotation);
             }
+            Instantiate(sound, transform.position, transform.rotation);
             cameraAnim.SetTrigger("Shake");
             Destroy(gameObject);
         }

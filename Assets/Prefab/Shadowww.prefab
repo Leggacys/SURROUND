@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5740b4dae44f73b4dab0a44e3892c1f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blood: {fileID: 6697815452196926128, guid: 38c28ed49f62068438f69b2f1fcbbd14, type: 3}
   player: {fileID: 0}
   speed: 2
   health: 3
@@ -122,6 +123,7 @@ MonoBehaviour:
   pickups:
   - {fileID: 8802312202597217015, guid: 533eaa2864a871f4b92892cf3b82f02e, type: 3}
   - {fileID: 8802312202597217015, guid: 533eaa2864a871f4b92892cf3b82f02e, type: 3}
+  sound: {fileID: 4883786898264719048, guid: f29e42addf638654a8f0b29e7713d193, type: 3}
   distance: 8
   shotpoint: {fileID: 5474573096474129120}
   proiectiles: {fileID: 4701320380282669873, guid: f2c6c8e65ca028d4f88a0a6913961b8c,
@@ -173,6 +175,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -302,6 +305,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -396,6 +400,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

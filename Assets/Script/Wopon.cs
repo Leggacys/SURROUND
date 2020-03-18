@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Wopon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+   
 
     public GameObject proiectiles;
     public float TimebetwenShoots;

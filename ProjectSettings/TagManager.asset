@@ -11,6 +11,7 @@ TagManager:
   - BossMovePoint
   - worldLight
   - Gripa
+  - Meniu_Panel
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,7 @@ public class Proiectile : MonoBehaviour
     public float lifetime;
     public GameObject explosions;
     public int damage;
+    public GameObject sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class Proiectile : MonoBehaviour
 
     void Distructions()
     {
-        
+        Instantiate(sound, transform.position, transform.rotation);
         Instantiate(explosions,transform.position, Quaternion.identity);
         Destroy(gameObject,0);
 
